@@ -22,7 +22,36 @@ class Index_Model extends Model
         return $this->conditions;
     }
 
+    public function getNews(){
+        $rss = new DOMDocument();
+        $rss->load('https://news.google.com/news/feeds?q=columbia%2Csc&output=rss');
+        $feed = array();
+        foreach ($rss->getElementsByTagName('item') as $node) {
+
+            $html=$node->getElementsByTagName('description')->item(0)->nodeValue;
+            $xpath = new DOMXPath(@DOMDocument::loadHTML($html));
+            $src = $xpath->evaluate("string(//img/@src)");
+
+            $item = array (
+                'title' => $node->getElementsByTagName('title')->item(0)->nodeValue,
+                'link' => $node->getElementsByTagName('link')->item(0)->nodeValue,
+                'date' => $node->getElementsByTagName('pubDate')->item(0)->nodeValue,
+                'img' => $src
+            );
+            array_push($feed, $item);
+        }
+        return $feed;
+    }
+
+    public function getFacebook(){
+        $page_id = 'makethepointcae';
+        $access_token = '598764416845888|jNn7g6RVO_SIxzCWYbNvqMGfq4k';
+        $json_object = @file_get_contents('https://graph.facebook.com/' . $page_id .
+            '/posts?access_token=' . $access_token);
+        return json_decode($json_object);
+    }
+
     public function test(){
-        return "uyu";
+        return "test";
     }
 }

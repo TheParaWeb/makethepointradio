@@ -20,3 +20,6 @@ define('DB_PASS', 'Begaeen1!');
 // NSEncrypt Keys, DO NOT CHANGE ONCE IN PRODUCTION!!! THIS WILL BREAK THE APP.
 define("AES_KEY", "abcdefghijuklmno0123456789012345");
 define("AES_IV", "1234567890abcdef");
+
+// Timezone Settings
+date_default_timezone_set('America/New_York');

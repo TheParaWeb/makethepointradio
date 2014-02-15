@@ -90,8 +90,10 @@ class Bootstrap
      */
     private function _loadDefaultController()
     {
+
         require $this->_controllerPath . $this->_defaultFile;
         $this->_controller = new Index();
+        $this->_controller->loadModel('index', $this->_modelPath);
         $this->_controller->index();
     }
 

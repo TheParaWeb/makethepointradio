@@ -301,7 +301,9 @@ header nav li ul li a.disabled:hover {
 
 .news img {
 	padding-bottom: 10px;
-	width: 100%;
+    margin-right:10px;
+	width: 35%;
+    float:left;
 }
 
 .news .small-block-grid-2 > li:nth-of-type(n) { padding: 0 0 1.25rem 1.875rem; }
