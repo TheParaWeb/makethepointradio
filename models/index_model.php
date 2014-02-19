@@ -12,8 +12,15 @@ class Index_Model extends Model
     public function __construct()
     {
         parent::__construct();
-        Session::sessionStart('SESSION_NAME'); //TODO: Change session name.
-        $this->visitorId = Session::get('visitorId');
+        Session::sessionStart('VISITOR');
+        $this->geoCoder = new Geocoder();
+    }
+
+    public function getLocation(){
+        // If search is not initiated, pull location from IP.
+        if(!isset($_POST['location'])){$location=$this->geoCoder->getLocationFromIP($_SERVER['REMOTE_ADDR']);}
+        else{$location=$this->geoCoder->getLocation($_POST['location']);}
+        return $location;
     }
 
     public function getWeather($location){
@@ -52,6 +59,6 @@ class Index_Model extends Model
     }
 
     public function test(){
-        return "test";
+
     }
 }

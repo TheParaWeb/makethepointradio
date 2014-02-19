@@ -1,5 +1,5 @@
 <?php
-// TODO: Move API endpoints out of the class and into consts.
+// TODO: Integrate Google Maps API for zip lookup and add the ability to change location.
 class ForecastIO
 {
     // Forecast IO API for weather.
@@ -7,11 +7,13 @@ class ForecastIO
     private $api_key;
 
     // Earthtools API for Sunrise / Sunset.
-
     const SUN_ENDPOINT = "http://www.earthtools.org/sun/";
 
     // EPA.GOV API for UV Index.
     const UV_ENDPOINT = "http://iaspub.epa.gov/enviro/efservice/getEnvirofactsUVDAILY/ZIP/";
+
+    // WEBMD Pollen HTML.
+    const POLLEN_ENDPOINT = "http://airquality.webmd.com/AirQuality/Pollen.aspx?zipcode=";
 
 
     public function __construct($api_key)
@@ -64,8 +66,17 @@ class ForecastIO
         return $response[0];
     }
 
+    public function scrapePollen($zipcode){
+        $request_url = self::POLLEN_ENDPOINT.$zipcode;
+        $file = file_get_contents($request_url);
+        $xpath = new DOMXPath(@DOMDocument::loadHTML($file));
+        $pollenIndex = $xpath->query('//span[@id="lblOverall"]')->item(0)->nodeValue;
+        return $pollenIndex;
+    }
+
     public function get($latitude, $longitude, $time = null, $options = array())
     {
+
         // Get Weather and set thermometer.
         $forecast = $this->requestWeather($latitude, $longitude, $time, $options);
         if($forecast->currently->temperature < 50){$forecast->currently->thermometer ='cold';}
@@ -86,6 +97,10 @@ class ForecastIO
                         'VERY-HIGH','VERY-HIGH',
                         'EXTREME','EXTREME','EXTREME');
         $forecast->currently->uvText = $uvText[$data->UV_INDEX];
+
+        // Scrape Pollen Index.
+        $forecast->currently->pollenIndex = $this->scrapePollen('29072');
+
         return $forecast;
 
     }

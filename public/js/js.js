@@ -4,4 +4,16 @@ $(document).ready(function () {
         return false;
     });
 
+
+
+    //TODO:TEMP FB SCRIPT.
+
+    if($(window).width() < 987){
+        var width = $(window).width() * .56838905775076;
+        width = Math.round((width/10)*10);
+
+        $('.fb-post').attr('data-width',width);
+    }
+
+
 });

@@ -20,16 +20,18 @@
             <div class="clearfix"></div>
         </div><!--head-->
 
+        <!--
         <div class="small-12 city-search">
-            <form method="post">
+            <form action="" method="post">
                 <div class="row collapse">
                     <label for="search">Search</label>
-                    <div class="small-10 columns search-box"><input type="search" name="search" placeholder="City or Zip"></div>
+                    <div class="small-10 columns search-box"><input type="search" name="location" placeholder="City or Zip"></div>
 
                     <div class="small-2 columns search-submit"><input type="submit" name="search-submit" value="" class="postfix"></div>
                 </div
             </form>
         </div>
+        -->
 
         <div class="small-12 city-info">
             <table cellpadding="0" cellspacing="0">
@@ -99,14 +101,13 @@
                                                                     <td class="uv">
                                                                         <p>UV</p>
                                                                         <p>Index</p>
-                                                                        <h5><?php echo $this->weatherConditions->currently->uvIndex;?>-
-                                                                            <?php echo $this->weatherConditions->currently->uvText;?></h5>
+                                                                        <h5><?php echo $this->weatherConditions->currently->uvText;?></h5>
                                                                     </td><!--uv-->
 
                                                                     <td class="pollen">
                                                                         <p>Pollen</p>
                                                                         <p>Count</p>
-                                                                        <h5>2-Low</h5>
+                                                                        <h5><?php echo $this->weatherConditions->currently->pollenIndex;?></h5>
                                                                     </td><!--pollen-->
                                                                 </tr>
                                                             </table>

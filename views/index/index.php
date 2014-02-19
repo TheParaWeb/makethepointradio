@@ -5,6 +5,7 @@
         </div><!--row-->
 
         <div class="row">
+            <?php //TODO: Hook up form and add validation. ?>
             <form class="small-10 medium-10 large-6 small-centered columns subscribe">
                 <div class="row collapse">
                     <div class="small-9 columns">
@@ -32,8 +33,8 @@
 
     <div class="clearfix"></div>
 
-    <?php include("modules/blog.ssi.php");?>
-
+    <?php// include("modules/blog.ssi.php");?>
+    <?php include("modules/facebook.ssi.php");?>
     <div class="small-12 columns ad">
         <h4 class="extralight">Ad Space</h4>
     </div><!--ad-->

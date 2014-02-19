@@ -13,11 +13,17 @@ class Index extends Controller
     {
         parent::__construct();
         //Session::sessionStart('SESSION_NAME'); //TODO: Change session name to relevant name.
+
+
     }
 
-    function index()
+    function index($location = null)
     {
+        // TODO: Add statistics.
         //$this->statistics->insertPageView();
+
+        // Get location for weather and news.
+        $this->location = $this->model->getLocation();
 
         //Now playing.
         $this->view->nowPlaying->name = "Kevin Cohen";
@@ -29,11 +35,10 @@ class Index extends Controller
         $this->view->news = $this->model->getNews();
 
         // Facebook
-        $this->view->faceBook = $this->model->getFacebook();
+        $this->view->facebook = $this->model->getFacebook();
 
         // Weather
-        $location = Auth::getLocation($_SERVER['REMOTE_ADDR']);
-        $this->view->weatherConditions = $this->model->getWeather($location);
+        $this->view->weatherConditions = $this->model->getWeather($this->location);
 
         //Render the page.
         $this->view->render('header');
@@ -41,15 +46,8 @@ class Index extends Controller
         $this->view->render('footer');
     }
 
-    function test(){
-        $facebook = $this->model->getFacebook();
-        foreach($facebook->data AS $data){
-            echo "<b>".$data->type."</b><br/>";
-            var_dump($data);
-            echo "<br/><hr/><br/>";
-        }
-
-        die;
-    }
+   function test($name = "Lee"){
+       echo "hello ".$name;
+   }
 
 }
