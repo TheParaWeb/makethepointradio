@@ -28,15 +28,21 @@
     <?php include("modules/latestNews.ssi.php");?>
 
     <div class="small-12 columns ad">
-        <h4 class="extralight">Ad Space</h4>
+        <img src="http://placehold.it/768x90"/>
     </div><!--ad-->
 
     <div class="clearfix"></div>
 
     <?php// include("modules/blog.ssi.php");?>
     <?php include("modules/facebook.ssi.php");?>
+
     <div class="small-12 columns ad">
-        <h4 class="extralight">Ad Space</h4>
+        <div class="row">
+            <div class="large-4 med-4 small-12 columns"><img src="http://placehold.it/300x250"/></div>
+            <div class="large-4 med-4 small-12 columns"><img src="http://placehold.it/300x250"/></div>
+            <div class="large-4 med-4 small-12 columns"><img src="http://placehold.it/300x250"/></div>
+        </div>
+
     </div><!--ad-->
     <div class="clearfix"></div>
 
@@ -47,7 +53,7 @@
 <?php include('modules/featured.ssi.php');?>
 
 <div class="small-12 columns ad">
-    <h4 class="extralight">Ad Space</h4>
+    <img src="http://placehold.it/468x60/"/>
 </div><!--ad-->
 
 <div class="clearfix"></div>

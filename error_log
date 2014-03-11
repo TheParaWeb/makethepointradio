@@ -609,3 +609,77 @@ Stack trace:
 [05-Feb-2014 12:44:35 America/Los_Angeles] PHP Fatal error:  Call to a member function test() on a non-object in /home/tpmcho5/public_html/dev/framework/controllers/index.php on line 22
 [05-Feb-2014 12:45:28 America/Los_Angeles] PHP Fatal error:  Call to a member function test() on a non-object in /home/tpmcho5/public_html/dev/framework/controllers/index.php on line 22
 [05-Feb-2014 12:49:02 America/Los_Angeles] PHP Fatal error:  Cannot use object of type stdClass as array in /home/tpmcho5/public_html/dev/framework/views/index/index.php on line 5
+[13-Feb-2014 14:31:15 America/Los_Angeles] PHP Warning:  include() [<a href='function.include'>function.include</a>]: http:// wrapper is disabled in the server configuration by allow_url_include=0 in /home/tpmcho5/public_html/dev/thepoint/views/index/index.php on line 4
+[13-Feb-2014 14:31:15 America/Los_Angeles] PHP Warning:  include(http://thepoint.tpmchosting.com/views/index/modules/nowPlaying.ssi.php) [<a href='function.include'>function.include</a>]: failed to open stream: no suitable wrapper could be found in /home/tpmcho5/public_html/dev/thepoint/views/index/index.php on line 4
+[13-Feb-2014 14:31:15 America/Los_Angeles] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'http://thepoint.tpmchosting.com/views/index/modules/nowPlaying.ssi.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php:/home/tpmcho5/php') in /home/tpmcho5/public_html/dev/thepoint/views/index/index.php on line 4
+[13-Feb-2014 14:59:45 America/Los_Angeles] PHP Warning:  include(modules/features.ssi.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/tpmcho5/public_html/dev/thepoint/views/index/index.php on line 43
+[13-Feb-2014 14:59:45 America/Los_Angeles] PHP Warning:  include(modules/features.ssi.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/tpmcho5/public_html/dev/thepoint/views/index/index.php on line 43
+[13-Feb-2014 14:59:45 America/Los_Angeles] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'modules/features.ssi.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php:/home/tpmcho5/php') in /home/tpmcho5/public_html/dev/thepoint/views/index/index.php on line 43
+[13-Feb-2014 15:44:09 America/Los_Angeles] PHP Catchable fatal error:  Object of class DOMNodeList could not be converted to string in /home/tpmcho5/public_html/dev/thepoint/models/index_model.php on line 30
+[13-Feb-2014 15:51:42 America/Los_Angeles] PHP Fatal error:  Call to a member function getNews() on a non-object in /home/tpmcho5/public_html/dev/thepoint/controllers/test.php on line 19
+[13-Feb-2014 15:59:58 America/Los_Angeles] PHP Parse error:  syntax error, unexpected T_STRING, expecting ',' or ';' in /home/tpmcho5/public_html/dev/thepoint/models/index_model.php on line 31
+[13-Feb-2014 16:02:16 America/Los_Angeles] PHP Catchable fatal error:  Argument 1 passed to DOMXPath::__construct() must be an instance of DOMDocument, boolean given, called in /home/tpmcho5/public_html/dev/thepoint/controllers/index.php on line 42 and defined in /home/tpmcho5/public_html/dev/thepoint/models/index_model.php on line 32
+[13-Feb-2014 17:56:15 America/Los_Angeles] PHP Fatal error:  Call to a member function getNews() on a non-object in /home/tpmcho5/public_html/dev/thepoint/controllers/index.php on line 29
+[13-Feb-2014 17:57:08 America/Los_Angeles] PHP Fatal error:  Call to a member function getNews() on a non-object in /home/tpmcho5/public_html/dev/thepoint/controllers/index.php on line 29
+[13-Feb-2014 17:57:09 America/Los_Angeles] PHP Fatal error:  Call to a member function getNews() on a non-object in /home/tpmcho5/public_html/dev/thepoint/controllers/index.php on line 29
+[13-Feb-2014 17:57:10 America/Los_Angeles] PHP Fatal error:  Call to a member function getNews() on a non-object in /home/tpmcho5/public_html/dev/thepoint/controllers/index.php on line 29
+[13-Feb-2014 17:58:36 America/Los_Angeles] PHP Fatal error:  Call to a member function getNews() on a non-object in /home/tpmcho5/public_html/dev/thepoint/controllers/index.php on line 29
+[13-Feb-2014 17:58:56 America/Los_Angeles] PHP Fatal error:  Call to a member function getNews() on a non-object in /home/tpmcho5/public_html/dev/thepoint/controllers/index.php on line 29
+[13-Feb-2014 17:59:15 America/Los_Angeles] PHP Fatal error:  Call to a member function getNews() on a non-object in /home/tpmcho5/public_html/dev/thepoint/controllers/index.php on line 29
+[13-Feb-2014 18:00:00 America/Los_Angeles] PHP Fatal error:  Call to a member function test() on a non-object in /home/tpmcho5/public_html/dev/thepoint/controllers/index.php on line 29
+[13-Feb-2014 18:00:23 America/Los_Angeles] PHP Fatal error:  Call to a member function test() on a non-object in /home/tpmcho5/public_html/dev/thepoint/controllers/index.php on line 29
+[13-Feb-2014 18:05:17 America/Los_Angeles] PHP Fatal error:  Call to a member function test() on a non-object in /home/tpmcho5/public_html/dev/thepoint/controllers/index.php on line 29
+[13-Feb-2014 18:12:15 America/Los_Angeles] PHP Parse error:  syntax error, unexpected T_REQUIRE, expecting T_FUNCTION in /home/tpmcho5/public_html/dev/thepoint/libs/Bootstrap.php on line 12
+[13-Feb-2014 18:18:04 America/Los_Angeles] PHP Fatal error:  Call to a member function test() on a non-object in /home/tpmcho5/public_html/dev/thepoint/controllers/index.php on line 29
+[13-Feb-2014 18:19:12 America/Los_Angeles] PHP Fatal error:  Call to a member function test() on a non-object in /home/tpmcho5/public_html/dev/thepoint/controllers/index.php on line 29
+[14-Feb-2014 06:51:48 America/Los_Angeles] PHP Warning:  Missing argument 1 for Index_Model::getWeather(), called in /home/tpmcho5/public_html/dev/thepoint/controllers/index.php on line 45 and defined in /home/tpmcho5/public_html/dev/thepoint/models/index_model.php on line 19
+[14-Feb-2014 10:06:28 America/New_York] PHP Parse error:  syntax error, unexpected '<' in /home/tpmcho5/public_html/dev/thepoint/views/index/modules/weather.ssi.php on line 16
+[14-Feb-2014 10:28:50 America/New_York] PHP Parse error:  syntax error, unexpected '<' in /home/tpmcho5/public_html/dev/thepoint/views/index/modules/weather.ssi.php on line 116
+[14-Feb-2014 12:39:41 America/New_York] PHP Warning:  simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 1: parser error : Start tag expected, '&lt;' not found in /home/tpmcho5/public_html/dev/thepoint/libs/ForecastIO.php on line 36
+[14-Feb-2014 12:39:41 America/New_York] PHP Warning:  simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: http://www.earthtools.org/sun/34.0007/-81.0348/2/14/99/1 in /home/tpmcho5/public_html/dev/thepoint/libs/ForecastIO.php on line 36
+[14-Feb-2014 12:39:41 America/New_York] PHP Warning:  simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: ^ in /home/tpmcho5/public_html/dev/thepoint/libs/ForecastIO.php on line 36
+[14-Feb-2014 13:05:29 America/New_York] PHP Fatal error:  Cannot use object of type stdClass as array in /home/tpmcho5/public_html/dev/thepoint/controllers/index.php on line 46
+[14-Feb-2014 13:05:39 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/tpmcho5/public_html/dev/thepoint/controllers/index.php on line 46
+[15-Feb-2014 09:57:08 America/New_York] PHP Warning:  Attempt to assign property of non-object in /home/tpmcho5/public_html/dev/thepoint/libs/ForecastIO.php on line 62
+[15-Feb-2014 11:35:47 America/New_York] PHP Catchable fatal error:  Object of class DOMDocument could not be converted to string in /home/tpmcho5/public_html/dev/thepoint/libs/ForecastIO.php on line 73
+[15-Feb-2014 11:38:18 America/New_York] PHP Warning:  DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID lblCity already defined in Entity, line: 36 in /home/tpmcho5/public_html/dev/thepoint/libs/ForecastIO.php on line 73
+[15-Feb-2014 11:38:18 America/New_York] PHP Warning:  DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID CtrlCopy1_lblYear already defined in Entity, line: 72 in /home/tpmcho5/public_html/dev/thepoint/libs/ForecastIO.php on line 73
+[15-Feb-2014 11:38:18 America/New_York] PHP Warning:  DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID CtrlCopy1_lblLink already defined in Entity, line: 74 in /home/tpmcho5/public_html/dev/thepoint/libs/ForecastIO.php on line 73
+[15-Feb-2014 11:38:18 America/New_York] PHP Warning:  DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID lblAds already defined in Entity, line: 89 in /home/tpmcho5/public_html/dev/thepoint/libs/ForecastIO.php on line 73
+[15-Feb-2014 11:39:25 America/New_York] PHP Warning:  DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID lblCity already defined in Entity, line: 36 in /home/tpmcho5/public_html/dev/thepoint/libs/ForecastIO.php on line 73
+[15-Feb-2014 11:39:25 America/New_York] PHP Warning:  DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID CtrlCopy1_lblYear already defined in Entity, line: 72 in /home/tpmcho5/public_html/dev/thepoint/libs/ForecastIO.php on line 73
+[15-Feb-2014 11:39:25 America/New_York] PHP Warning:  DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID CtrlCopy1_lblLink already defined in Entity, line: 74 in /home/tpmcho5/public_html/dev/thepoint/libs/ForecastIO.php on line 73
+[15-Feb-2014 11:39:25 America/New_York] PHP Warning:  DOMDocument::loadHTML() [<a href='domdocument.loadhtml'>domdocument.loadhtml</a>]: ID lblAds already defined in Entity, line: 89 in /home/tpmcho5/public_html/dev/thepoint/libs/ForecastIO.php on line 73
+[16-Feb-2014 18:52:48 America/New_York] PHP Fatal error:  Call to a member function query() on a non-object in /home/tpmcho5/public_html/dev/thepoint/libs/ForecastIO.php on line 72
+[16-Feb-2014 21:47:38 America/New_York] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /home/tpmcho5/public_html/dev/thepoint/views/index/modules/facebook.ssi.php on line 19
+[16-Feb-2014 22:17:58 America/New_York] PHP Parse error:  syntax error, unexpected ')', expecting ';' in /home/tpmcho5/public_html/dev/thepoint/views/index/modules/facebook.ssi.php on line 7
+[17-Feb-2014 15:12:13 America/New_York] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ',' or ';' in /home/tpmcho5/public_html/dev/thepoint/views/index/modules/facebook.ssi.php on line 58
+[18-Feb-2014 14:54:19 America/New_York] PHP Fatal error:  Class 'shows' not found in /home/tpmcho5/public_html/dev/thepoint/libs/Bootstrap.php on line 111
+[18-Feb-2014 14:56:54 America/New_York] PHP Fatal error:  Class 'shows' not found in /home/tpmcho5/public_html/dev/thepoint/libs/Bootstrap.php on line 111
+[19-Feb-2014 08:25:27 America/New_York] PHP Fatal error:  Class 'shows' not found in /home/tpmcho5/public_html/dev/thepoint/libs/Bootstrap.php on line 111
+[20-Feb-2014 09:12:38 America/New_York] PHP Fatal error:  Class 'shows' not found in /home/tpmcho5/public_html/dev/thepoint/libs/Bootstrap.php on line 111
+[21-Feb-2014 10:06:30 America/New_York] PHP Fatal error:  Class 'shows' not found in /home/tpmcho5/public_html/dev/thepoint/libs/Bootstrap.php on line 111
+[21-Feb-2014 10:10:07 America/New_York] PHP Fatal error:  Class 'shows' not found in /home/tpmcho5/public_html/dev/thepoint/libs/Bootstrap.php on line 111
+[24-Feb-2014 08:23:31 America/New_York] PHP Fatal error:  Class 'shows' not found in /home/tpmcho5/public_html/dev/thepoint/libs/Bootstrap.php on line 111
+[24-Feb-2014 08:42:42 America/New_York] PHP Fatal error:  Class 'shows' not found in /home/tpmcho5/public_html/dev/thepoint/libs/Bootstrap.php on line 111
+[24-Feb-2014 13:53:03 America/New_York] PHP Fatal error:  Class 'shows' not found in /home/tpmcho5/public_html/dev/thepoint/libs/Bootstrap.php on line 111
+[24-Feb-2014 13:56:33 America/New_York] PHP Fatal error:  Class 'shows' not found in /home/tpmcho5/public_html/dev/thepoint/libs/Bootstrap.php on line 111
+[24-Feb-2014 14:00:32 America/New_York] PHP Fatal error:  Class 'shows' not found in /home/tpmcho5/public_html/dev/thepoint/libs/Bootstrap.php on line 111
+[24-Feb-2014 14:01:27 America/New_York] PHP Fatal error:  Class 'shows' not found in /home/tpmcho5/public_html/dev/thepoint/libs/Bootstrap.php on line 111
+[27-Feb-2014 11:07:23 America/New_York] PHP Fatal error:  Class 'shows' not found in /home/tpmcho5/public_html/dev/thepoint/libs/Bootstrap.php on line 111
+[28-Feb-2014 12:51:28 America/New_York] PHP Fatal error:  Cannot access empty property in /home/tpmcho5/public_html/dev/thepoint/libs/Geocoder.php on line 23
+[28-Feb-2014 15:37:47 America/New_York] PHP Fatal error:  Cannot access empty property in /home/tpmcho5/public_html/dev/thepoint/libs/Geocoder.php on line 23
+[28-Feb-2014 15:37:58 America/New_York] PHP Fatal error:  Cannot access empty property in /home/tpmcho5/public_html/dev/thepoint/libs/Geocoder.php on line 23
+[01-Mar-2014 00:18:57 America/New_York] PHP Fatal error:  Cannot access empty property in /home/tpmcho5/public_html/dev/thepoint/libs/Geocoder.php on line 23
+[01-Mar-2014 00:18:58 America/New_York] PHP Fatal error:  Cannot access empty property in /home/tpmcho5/public_html/dev/thepoint/libs/Geocoder.php on line 23
+[03-Mar-2014 11:54:12 America/New_York] PHP Fatal error:  Cannot access empty property in /home/tpmcho5/public_html/dev/thepoint/libs/Geocoder.php on line 23
+[03-Mar-2014 12:00:57 America/New_York] PHP Fatal error:  Cannot access empty property in /home/tpmcho5/public_html/dev/thepoint/libs/Geocoder.php on line 23
+[03-Mar-2014 12:08:18 America/New_York] PHP Fatal error:  Cannot access empty property in /home/tpmcho5/public_html/dev/thepoint/libs/Geocoder.php on line 23
+[03-Mar-2014 12:08:40 America/New_York] PHP Fatal error:  Cannot access empty property in /home/tpmcho5/public_html/dev/thepoint/libs/Geocoder.php on line 23
+[03-Mar-2014 12:09:43 America/New_York] PHP Fatal error:  Cannot access empty property in /home/tpmcho5/public_html/dev/thepoint/libs/Geocoder.php on line 23
+[03-Mar-2014 12:09:47 America/New_York] PHP Fatal error:  Cannot access empty property in /home/tpmcho5/public_html/dev/thepoint/libs/Geocoder.php on line 23
+[03-Mar-2014 12:12:13 America/New_York] PHP Fatal error:  Cannot access empty property in /home/tpmcho5/public_html/dev/thepoint/libs/Geocoder.php on line 24
+[03-Mar-2014 12:13:11 America/New_York] PHP Fatal error:  Cannot access empty property in /home/tpmcho5/public_html/dev/thepoint/libs/Geocoder.php on line 25
+[10-Mar-2014 08:54:40 America/New_York] PHP Fatal error:  Class 'shows' not found in /home/tpmcho5/public_html/dev/thepoint/libs/Bootstrap.php on line 111
+[10-Mar-2014 09:08:39 America/New_York] PHP Fatal error:  Class 'shows' not found in /home/tpmcho5/public_html/dev/thepoint/libs/Bootstrap.php on line 111
+[11-Mar-2014 10:00:18 America/New_York] PHP Fatal error:  Class 'shows' not found in /home/tpmcho5/public_html/dev/thepoint/libs/Bootstrap.php on line 111

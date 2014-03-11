@@ -58,10 +58,10 @@ span {
 .red { color: #bb2529; }
 
 .ad {
-    background: #999;
-    padding: 50px 25px;
+    padding: 0;
     text-align: center;
 }
+header .ad{margin-top:10px;}
 
 .ad h4 { color: #fff; }
 

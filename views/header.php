@@ -36,7 +36,7 @@
 <div class="wrapper">
     <header>
         <div class="ad">
-            <h4 class="extralight">Ad Space</h4>
+            <img src="http://placehold.it/768x90"/>
         </div><!--ad-->
 
         <div class="row logo-tagline">

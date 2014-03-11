@@ -8,6 +8,7 @@
 
 // Always provide a TRAILING SLASH (/) AFTER A PATH
 define('URL', 'http://thepoint.tpmchosting.com/');
+define('ADMIN_URL','http://thepoint.tpmchosting.com/views/admin/');
 define('LIBS', 'libs/');
 define('VERSION','1.0.1');
 
