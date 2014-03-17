@@ -6,7 +6,7 @@
  * Time: 5:07 PM
  */
 
-class Index extends Controller
+class Shows extends Controller
 {
 
     function __construct()
@@ -25,6 +25,23 @@ class Index extends Controller
         //Render the page.
         $this->view->render('header');
         $this->view->render('shows/index');
+        $this->view->render('footer');
+    }
+
+    function bio($id = null)
+    {
+        //Render the page.
+        $this->view->render('header');
+        $this->view->render('shows/bio');
+        $this->view->render('footer');
+    }
+
+
+    function contact()
+    {
+        //Render the page.
+        $this->view->render('header');
+        $this->view->render('contact/index');
         $this->view->render('footer');
     }
 

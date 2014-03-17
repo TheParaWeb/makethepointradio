@@ -1,4 +1,9 @@
-#header, #logo-group, #project-context, .pull-right{
+#header, #logo-group, #project-context{
     background: #3A3633;
 }
 #project-selector:hover{color:#fff;}
+
+.ajax-dropdown span button.btn-default{background:#EFEFEF;}
+#myTab{
+    background:#FAFAFA;
+}

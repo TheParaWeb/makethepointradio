@@ -56,7 +56,7 @@ class Database extends PDO
         if ($sth->execute()) {
             return true;
         } else {
-            return false;
+            return false; //error inserting into db
         }
     }
 

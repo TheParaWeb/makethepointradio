@@ -174,12 +174,13 @@ class Session
 
     public static function destroy()
     {
+        $_SESSION = array();
         unset($_SESSION);
         session_destroy();
     }
 
-    public static function handleCookie(){
-        if(isset($_COOKIE['visitorId'])&&!(isset($_SESSION['visitorId']))){
+    public static function checkNewVisitor(){ // check to see if new or returning visitor
+        if(isset($_COOKIE['visitorId']) && !isset($_SESSION['visitorId'])){
             $_SESSION['visitorId']=$_COOKIE['visitorId'];
         }else{
             if(!isset($_SESSION['visitorId'])){

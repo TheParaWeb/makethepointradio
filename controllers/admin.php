@@ -15,6 +15,14 @@ class Admin extends Controller
         //Session::sessionStart('SESSION_NAME'); //TODO: Change session name to relevant name.
 
 
+        $this->view->admin = array(
+            'name'=>'Lee Allen',
+            'role'=>'owner',
+            'email'=>'lallen@theparafirm.com',
+            'id'=>1,
+            'avatarSmall'=>'/img/avatars/lee-allen-small.png',
+            'avatarLarge'=>'/img/avatars/lee-allen-large.png'
+        );
     }
 
     function index($location = null)

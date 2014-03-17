@@ -14,6 +14,17 @@ class Index_Model extends Model
         parent::__construct();
         Session::sessionStart('VISITOR');
         $this->geoCoder = new Geocoder();
+
+    }
+
+    public function getPollQuestion(){
+        $this->poll = new Poll();
+        return $this->poll->getPollQuestion();
+     }
+
+    public function submitPollAnswer($pollId, $answer, $visitorId){
+        $this->poll = new Poll();
+        return $this->poll->insertAnswer($pollId, $answer, $visitorId);
     }
 
     public function getLocation(){

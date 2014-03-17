@@ -31,7 +31,7 @@
     </div><!--social-->
 
     <div class="medium-6 small-centered columns copyright">
-        <p>Copyright &copy; <!--<?php echo date('Y'); ?>--> 2014 Capital City Media, LLC. P0 Box 50433. Columbia, SC 29250. <span class="bold">803-563-8558</span></p>
+        <p>Copyright &copy; <?php echo date('Y'); ?> Capital City Media, LLC. P0 Box 50433. Columbia, SC 29250. <span class="bold">803-563-8558</span></p>
 
         <p class="para">Website designed by <a href="http://www.theparamarketingcompany.com" target="_blank">The Para Marketing Company</a>.</p>
     </div><!--copyright-->
