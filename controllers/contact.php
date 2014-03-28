@@ -20,8 +20,7 @@ class Contact extends Controller
     function index($location = null)
     {
 
-        //change title (test)
-        $this->view->title = $this->model->getTitle();
+        $this->view->ads = $this->model->getAds(array('728x90'));
         //Render the page.
         $this->view->render('header');
         $this->view->render('contact/index');
@@ -31,7 +30,7 @@ class Contact extends Controller
 
     function submission()
     {
-
+        $this->view->ads = $this->model->getAds(array('728x90'));
         //Render the page.
         $this->view->render('header');
         $this->view->render('contact/submission');

@@ -18,7 +18,7 @@
 <div class="row content">
     <div class="medium-6 columns shows">
         <section>
-            <a href="keven-cohen.php">
+            <a href="<?php echo URL;?>shows/bio/keven-cohen/">
                 <img src="<?php echo URL; ?>public/images/djs/portrait-keven.jpg" alt="Keven Cohen">
 
                 <div class="info">
@@ -34,13 +34,13 @@
         </section><!--keven cohen-->
 
         <section>
-            <a href="keven-cohen.php">
+            <a href="<?php echo URL;?>shows/bio/herman-cain/">
                 <img src="<?php echo URL; ?>public/images/djs/portrait-herman.jpg" alt="Herman Cain">
 
                 <div class="info">
                     <h3>Herman Cain</h3>
                     <h4>Monday-Friday</h4>
-                    <h3 class="time">9AM-12PM</h3>
+                    <h3 class="time">10AM-12PM</h3>
                 </div><!--info-->
 
                 <div class="bio">
@@ -50,7 +50,7 @@
         </section><!--herman cain-->
 
         <section>
-            <a href="keven-cohen.php">
+            <a href="<?php echo URL;?>shows/bio/laura-ingraham/">
                 <img src="<?php echo URL; ?>public/images/djs/portrait-laura.jpg" alt="Laura Ingraham">
 
                 <div class="info">
@@ -66,7 +66,7 @@
         </section><!--laura ingraham-->
 
         <section>
-            <a href="keven-cohen.php">
+            <a href="<?php echo URL;?>shows/bio/todd-schnitt/">
                 <img src="<?php echo URL; ?>public/images/djs/portrait-todd.jpg" alt="Todd Schnitt">
 
                 <div class="info">
@@ -82,7 +82,7 @@
         </section><!--todd schnitt-->
 
         <section>
-            <a href="keven-cohen.php">
+            <a href="<?php echo URL;?>shows/bio/dave-ramsey/">
                 <img src="<?php echo URL; ?>public/images/djs/portrait-dave.jpg" alt="Dave Ramsey">
 
                 <div class="info">
@@ -98,7 +98,7 @@
         </section><!--dave ramsey-->
 
         <section>
-            <a href="keven-cohen.php">
+            <a href="<?php echo URL;?>shows/bio/leslie-marshall/">
                 <img src="<?php echo URL; ?>public/images/djs/portrait-leslie.jpg" alt="Leslie Marshall">
 
                 <div class="info">
@@ -114,23 +114,23 @@
         </section><!--leslie marshall-->
 
         <section>
-            <a href="keven-cohen.php">
-                <img src="<?php echo URL; ?>public/images/djs/portrait-phil.jpg" alt="Phil Hendrie">
+            <a href="<?php echo URL;?>shows/bio/michael-savage/">
+                <img src="http://placehold.it/283x329&text=No+Photo" alt="Michael Savage">
 
                 <div class="info">
-                    <h3>Phil Hendrie</h3>
+                    <h3>Michael Savage</h3>
                     <h4>Monday-Friday</h4>
                     <h3 class="time">10PM-1AM</h3>
                 </div><!--info-->
 
                 <div class="bio">
-                    <p><span class="bold">Phil Hendrie</span> nationally syndicated radio show is driven by his cast of fictional characters, all of whom he created and plays on air.</p>
+                    <p>No information availble.</p>
                 </div><!--bio-->
             </a>
         </section><!--phil hendrie-->
 
         <section>
-            <a href="keven-cohen.php">
+            <a href="<?php echo URL;?>shows/bio/red-eye-radio/">
                 <img src="<?php echo URL; ?>public/images/djs/portrait-red-eye.jpg" alt="Red Eye Radio">
 
                 <div class="info">
@@ -153,51 +153,51 @@
 
         <table cellpadding="0" cellspacing="0">
             <tr>
-                <td class="show-name"><a href="keven-cohen.php">Keven Cohen</a></td>
-                <td class="days"><a href="keven-cohen.php">M-F</a></td>
-                <td class="time"><a href="keven-cohen.php">6AM-9AM</a></td>
+                <td class="show-name"><a href="#">Keven Cohen</a></td>
+                <td class="days"><a href="#">M-F</a></td>
+                <td class="time"><a href="#">6AM-9AM</a></td>
             </tr>
 
             <tr>
-                <td class="show-name"><a href="keven-cohen.php">Herman Cain</a></td>
-                <td class="days"><a href="keven-cohen.php">M-F</a></td>
-                <td class="time"><a href="keven-cohen.php">9AM-12PM</a></td>
+                <td class="show-name"><a href="#">Herman Cain</a></td>
+                <td class="days"><a href="#">M-F</a></td>
+                <td class="time"><a href="#">10AM-12PM</a></td>
             </tr>
 
             <tr>
-                <td class="show-name"><a href="keven-cohen.php">Laura Ingraham</a></td>
-                <td class="days"><a href="keven-cohen.php">M-F</a></td>
-                <td class="time"><a href="keven-cohen.php">12PM-3PM</a></td>
+                <td class="show-name"><a href="#">Laura Ingraham</a></td>
+                <td class="days"><a href="#">M-F</a></td>
+                <td class="time"><a href="#">12PM-3PM</a></td>
             </tr>
 
             <tr>
-                <td class="show-name"><a href="keven-cohen.php">Todd Schnitt</a></td>
-                <td class="days"><a href="keven-cohen.php">M-F</a></td>
-                <td class="time"><a href="keven-cohen.php">3PM-6PM</a></td>
+                <td class="show-name"><a href="#">Todd Schnitt</a></td>
+                <td class="days"><a href="#">M-F</a></td>
+                <td class="time"><a href="#">3PM-6PM</a></td>
             </tr>
 
             <tr>
-                <td class="show-name"><a href="keven-cohen.php">Dave Ramsey</a></td>
-                <td class="days"><a href="keven-cohen.php">M-F</a></td>
-                <td class="time"><a href="keven-cohen.php">6PM-9PM</a></td>
+                <td class="show-name"><a href="#">Dave Ramsey</a></td>
+                <td class="days"><a href="#">M-F</a></td>
+                <td class="time"><a href="#">6PM-9PM</a></td>
             </tr>
 
             <tr>
-                <td class="show-name"><a href="keven-cohen.php">Leslie Marshall</a></td>
-                <td class="days"><a href="keven-cohen.php">M-F</a></td>
-                <td class="time"><a href="keven-cohen.php">9PM-10PM</a></td>
+                <td class="show-name"><a href="#">Leslie Marshall</a></td>
+                <td class="days"><a href="#">M-F</a></td>
+                <td class="time"><a href="#">9PM-10PM</a></td>
             </tr>
 
             <tr>
-                <td class="show-name"><a href="keven-cohen.php">Phil Hendrie</a></td>
-                <td class="days"><a href="keven-cohen.php">M-F</a></td>
-                <td class="time"><a href="keven-cohen.php">10PM-1AM</a></td>
+                <td class="show-name"><a href="#">Michael Savage</a></td>
+                <td class="days"><a href="#">M-F</a></td>
+                <td class="time"><a href="#">10PM-1AM</a></td>
             </tr>
 
             <tr>
-                <td class="show-name"><a href="keven-cohen.php">Red Eye Radio</a></td>
-                <td class="days"><a href="keven-cohen.php">M-F</a></td>
-                <td class="time"><a href="keven-cohen.php">1AM-6AM</a></td>
+                <td class="show-name"><a href="#">Red Eye Radio</a></td>
+                <td class="days"><a href="#">M-F</a></td>
+                <td class="time"><a href="#">1AM-6AM</a></td>
             </tr>
         </table>
     </div><!--show list-->

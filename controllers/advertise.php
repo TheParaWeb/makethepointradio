@@ -20,6 +20,7 @@ class Advertise extends Controller
     function index($location = null)
     {
 
+        $this->view->ads = $this->model->getAds(array('728x90'));
         $this->view->render('header');
         $this->view->render('advertise/index');
         $this->view->render('footer');

@@ -6,12 +6,17 @@
  * Time: 3:56 PM
  */
 
-class Contact_Model extends Model
+class Shows_Model extends Model
 {
 
     public function __construct()
     {
         parent::__construct();
+    }
+
+    public function getBio($plug){
+        $this->show = new Lineup();
+        return $this->show->getShowByPlug($plug);
     }
 
     public function getAds($sizes)
@@ -24,4 +29,6 @@ class Contact_Model extends Model
         }
         return $adsArray;
     }
+
+
 }

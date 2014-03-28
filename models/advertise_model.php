@@ -6,7 +6,7 @@
  * Time: 3:56 PM
  */
 
-class Contact_Model extends Model
+class Advertise_Model extends Model
 {
 
     public function __construct()

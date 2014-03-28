@@ -8,11 +8,13 @@
 
             <a href="<?php echo URL; ?>index/submitPollAnswer/
                 <?php echo $this->pollQuestion->id; ?>/1/" class="button pollAnswer"
-                data-answer="1">Yes</a>
+                data-answer="1">95.9 FM</a>
             <a href="<?php echo URL; ?>index/submitPollAnswer/
                 <?php echo $this->pollQuestion->id; ?>/0/" class="button pollAnswer"
-                data-answer="0">No</a>
-            <a href="#" class="button disabled">Discuss</a>
+                data-answer="0">1470 AM</a>
+            <!-- <a href="#" class="button disabled">Discuss</a> -->
+
+            <div class='ajax-poll' tclass='demo-mouse-over' ></div>
 
         </div>
         <!-- TODO: previous questions page.

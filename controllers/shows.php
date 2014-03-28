@@ -22,15 +22,24 @@ class Shows extends Controller
         // TODO: Add statistics.
         //$this->statistics->insertPageView();
 
+        $this->view->ads = $this->model->getAds(array('728x90'));
+
         //Render the page.
         $this->view->render('header');
         $this->view->render('shows/index');
         $this->view->render('footer');
     }
 
-    function bio($id = null)
+    function bio($plug = null)
     {
+        $this->view->ads = $this->model->getAds(array('728x90'));
         //Render the page.
+
+        //echo "<pre>";var_dump($this->model->getAds(array('728x90')));die;
+
+        $this->view->bio = $this->model->getBio($plug);
+        //echo "<pre>";var_dump($this->model->getBio($plug));die;
+
         $this->view->render('header');
         $this->view->render('shows/bio');
         $this->view->render('footer');
@@ -39,6 +48,8 @@ class Shows extends Controller
 
     function contact()
     {
+
+        $this->view->ads = $this->model->getAds(array('728x90'));
         //Render the page.
         $this->view->render('header');
         $this->view->render('contact/index');

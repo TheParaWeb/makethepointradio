@@ -12,9 +12,17 @@ class Test_Model extends Model
     public function __construct()
     {
         parent::__construct();
+        $this->addEngine = new AdEngine();
+        $this->lineup = new Lineup();
     }
 
     public function test(){
-        return "it works";
+        $this->news = new News();
+        echo "<pre>";
+
+        var_dump($this->news->getABCNews('national'));
+        die;
     }
+
+
 }

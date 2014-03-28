@@ -697,3 +697,26 @@ Stack trace:
 [14-Mar-2014 13:15:16 America/New_York] PHP Fatal error:  Call to a member function getTitle() on a non-object in /home/tpmcho5/public_html/dev/thepoint/controllers/advertise.php on line 24
 [14-Mar-2014 13:15:22 America/New_York] PHP Fatal error:  Call to a member function getTitle() on a non-object in /home/tpmcho5/public_html/dev/thepoint/controllers/advertise.php on line 24
 [14-Mar-2014 14:16:29 America/New_York] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /home/tpmcho5/public_html/dev/thepoint/views/index/modules/poll.ssi.php on line 5
+[17-Mar-2014 12:25:15 America/New_York] PHP Parse error:  syntax error, unexpected '<' in /home/tpmcho5/public_html/dev/thepoint/libs/AdEngine.php on line 28
+[17-Mar-2014 12:44:22 America/New_York] PHP Parse error:  syntax error, unexpected '<' in /home/tpmcho5/public_html/dev/thepoint/libs/AdEngine.php on line 31
+[17-Mar-2014 12:44:43 America/New_York] PHP Parse error:  syntax error, unexpected '<' in /home/tpmcho5/public_html/dev/thepoint/libs/AdEngine.php on line 31
+[17-Mar-2014 14:00:16 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/tpmcho5/public_html/dev/thepoint/models/index_model.php on line 23
+[17-Mar-2014 14:00:47 America/New_York] PHP Fatal error:  Call to a member function getSingleAd() on a non-object in /home/tpmcho5/public_html/dev/thepoint/models/index_model.php on line 25
+[17-Mar-2014 14:01:17 America/New_York] PHP Parse error:  syntax error, unexpected '=' in /home/tpmcho5/public_html/dev/thepoint/models/index_model.php on line 22
+[17-Mar-2014 14:01:32 America/New_York] PHP Fatal error:  Call to a member function getSingleAd() on a non-object in /home/tpmcho5/public_html/dev/thepoint/models/index_model.php on line 26
+[17-Mar-2014 14:45:35 America/New_York] PHP Parse error:  syntax error, unexpected '[', expecting ',' or ';' in /home/tpmcho5/public_html/dev/thepoint/views/header.php on line 39
+[17-Mar-2014 14:47:09 America/New_York] PHP Parse error:  syntax error, unexpected T_STRING, expecting ',' or ';' in /home/tpmcho5/public_html/dev/thepoint/views/header.php on line 43
+[17-Mar-2014 14:49:44 America/New_York] PHP Parse error:  syntax error, unexpected ';' in /home/tpmcho5/public_html/dev/thepoint/views/header.php on line 35
+[17-Mar-2014 15:25:44 America/New_York] PHP Warning:  Missing argument 1 for NsEncrypt::__construct(), called in /home/tpmcho5/public_html/dev/thepoint/controllers/test.php on line 30 and defined in /home/tpmcho5/public_html/dev/thepoint/libs/NsEncrypt.php on line 23
+[17-Mar-2014 23:55:55 America/New_York] PHP Fatal error:  Call to a member function getByTime() on a non-object in /home/tpmcho5/public_html/dev/thepoint/models/index_model.php on line 32
+[17-Mar-2014 23:56:06 America/New_York] PHP Fatal error:  Call to a member function getShowByTime() on a non-object in /home/tpmcho5/public_html/dev/thepoint/models/index_model.php on line 32
+[18-Mar-2014 00:01:27 America/New_York] PHP Warning:  PDOStatement::execute() [<a href='pdostatement.execute'>pdostatement.execute</a>]: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/tpmcho5/public_html/dev/thepoint/libs/Shows.php on line 19
+[18-Mar-2014 00:37:43 America/New_York] PHP Parse error:  syntax error, unexpected '<' in /home/tpmcho5/public_html/dev/thepoint/views/index/modules/nowPlaying.ssi.php on line 12
+[18-Mar-2014 01:10:40 America/New_York] PHP Fatal error:  Class 'Show' not found in /home/tpmcho5/public_html/dev/thepoint/models/shows_model.php on line 18
+[18-Mar-2014 01:11:15 America/New_York] PHP Fatal error:  Call to undefined method Shows::getShowByPlug() in /home/tpmcho5/public_html/dev/thepoint/models/shows_model.php on line 19
+[18-Mar-2014 01:11:30 America/New_York] PHP Fatal error:  Call to undefined method Shows::getShowByPlug() in /home/tpmcho5/public_html/dev/thepoint/models/shows_model.php on line 19
+[18-Mar-2014 01:11:57 America/New_York] PHP Fatal error:  Call to undefined method Shows::getShowByPlug() in /home/tpmcho5/public_html/dev/thepoint/models/shows_model.php on line 19
+[18-Mar-2014 01:12:30 America/New_York] PHP Fatal error:  Call to undefined method Shows::getShowByPlug() in /home/tpmcho5/public_html/dev/thepoint/models/shows_model.php on line 19
+[18-Mar-2014 01:14:39 America/New_York] PHP Fatal error:  Call to undefined method Shows::getShowByPlug() in /home/tpmcho5/public_html/dev/thepoint/models/shows_model.php on line 20
+[18-Mar-2014 10:43:48 America/New_York] PHP Fatal error:  Call to undefined method Contact_Model::getTitle() in /home/tpmcho5/public_html/dev/thepoint/controllers/contact.php on line 24
+[18-Mar-2014 10:45:33 America/New_York] PHP Fatal error:  Class 'advertise_Model' not found in /home/tpmcho5/public_html/dev/thepoint/libs/Controller.php on line 32

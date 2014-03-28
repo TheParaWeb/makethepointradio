@@ -93,7 +93,11 @@ header .ad{margin-top:10px;}
     margin: 0 auto;
 }
 
-.tagline { margin-top: 15px; }
+.tagline {
+	margin-top: 15px;
+	text-align: center;
+}
+
 .tagline h3 { font-family: 'Verlag-ExtraLight', sans-serif; }
 
 .tagline .phone h3, .tagline .phone h5 {
@@ -103,7 +107,7 @@ header .ad{margin-top:10px;}
 }
 
 .tagline .phone h3.numbers { font-family: 'Verlag-ExtraLight', sans-serif; }
-
+.tagline .phone h3 span.studio-line{font-size:.75em;margin-top:4px; vertical-align: baseline;}
 /*---nav---*/
 header nav ul {
     text-align: center;
@@ -294,6 +298,8 @@ header nav li ul li a.disabled:hover {
     text-transform: none;
 }
 
+.news ul { padding-left: 0.9375em; }
+
 .news li:hover h4.headline, .poll a:hover h4 {
     color: #bb2529;
     text-decoration: underline;
@@ -304,6 +310,9 @@ header nav li ul li a.disabled:hover {
     width: 35%;
     float:left;
     margin-right:10px;
+}
+.news img.img-small{
+    width:10%;
 }
 
 .news .small-block-grid-2 > li:nth-of-type(n) { padding: 0 0 1.25rem 1.875rem; }
@@ -756,7 +765,7 @@ page .title.dj h2.red .light { font-family: 'Verlag-Light', sans-serif; }
     box-shadow: none;
     font-size: 1.5rem;
     height: 2.75rem;
-    line-height: 2.2å5rem;
+    line-height: 2.25rem;
 }
 
 .contact textarea { min-height: 10rem; }
@@ -973,6 +982,7 @@ footer .copyright a:hover {
     }
 
     .dj-info .listen-now { margin-bottom: 15px; }
+
     .button { font-size: 1em; }
     .feature ::-webkit-input-placeholder { font-size: 1.2em; }
     .feature :-moz-placeholder { font-size: 1.2em; }

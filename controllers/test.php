@@ -16,7 +16,12 @@ class Test extends Controller
 
     function index()
     {
-       die($this->model->test());
+       $this->model->test();
+    }
+
+    function shows()
+    {
+        $this->model->shows();
     }
 
 }

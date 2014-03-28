@@ -17,6 +17,23 @@ class Index_Model extends Model
 
     }
 
+    public function getAds($sizes)
+    {
+        $this->adEngine = new AdEngine();
+        $adsArray = array();
+        foreach ($sizes AS $size){
+            $thisAd = $this->adEngine->getSingleAd($size);
+            array_push($adsArray,$thisAd);
+        }
+        return $adsArray;
+    }
+
+    public function getShow(){
+        $this->show = new Lineup();
+        return $this->show->getShowByTime(date("H:i:s"),date('D'));
+    }
+
+
     public function getPollQuestion(){
         $this->poll = new Poll();
         return $this->poll->getPollQuestion();
@@ -40,25 +57,14 @@ class Index_Model extends Model
         return $this->conditions;
     }
 
-    public function getNews(){
-        $rss = new DOMDocument();
-        $rss->load('https://news.google.com/news/feeds?q=columbia%2Csc&output=rss');
-        $feed = array();
-        foreach ($rss->getElementsByTagName('item') as $node) {
+    public function getLocalNews(){
+        $this->news = new News();
+        return $this->news->getLocalNews();
+    }
 
-            $html=$node->getElementsByTagName('description')->item(0)->nodeValue;
-            $xpath = new DOMXPath(@DOMDocument::loadHTML($html));
-            $src = $xpath->evaluate("string(//img/@src)");
-
-            $item = array (
-                'title' => $node->getElementsByTagName('title')->item(0)->nodeValue,
-                'link' => $node->getElementsByTagName('link')->item(0)->nodeValue,
-                'date' => $node->getElementsByTagName('pubDate')->item(0)->nodeValue,
-                'img' => $src
-            );
-            array_push($feed, $item);
-        }
-        return $feed;
+    public function getNationalNews(){
+        $this->news = new News();
+        return $this->news->getABCNews();
     }
 
     public function getFacebook(){

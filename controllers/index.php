@@ -25,17 +25,21 @@ class Index extends Controller
             'index/js/index.js'
         );
 
+        // Now Playing. Get current show for the home page.
+        $this->view->show = $this->model->getShow();
+
+        // Display Ads. (pass an array with each ad's dimensions IN THE ORDER OF THE AD's APPEARANCE.
+        $this->view->ads = $this->model->getAds(array('728x90', '728x90', '300x250', '300x250', '300x250', '468x60'));
+
+
         // Get location for weather and news.
         $this->location = $this->model->getLocation();
 
-        //Now playing.
-        $this->view->nowPlaying->name = "Kevin Cohen";
-        $this->view->nowPlaying->time = "6AM-9AM";
-        $this->view->nowPlaying->bioURL = URL."shows/1/";
-        $this->view->nowPlaying->imgHref = URL."public/images/djs/portrait-keven-thumb.jpg";
 
         // News - Local
-        $this->view->news = $this->model->getNews();
+        $this->view->localNews = $this->model->getLocalNews();
+        // News - Local
+        $this->view->nationalNews = $this->model->getNationalNews();
 
         // Facebook
         $this->view->facebook = $this->model->getFacebook();
